@@ -11,9 +11,32 @@ body {
 input,
 section {
   display: none;
-  padding: 1em;
+  /*padding: 1em;*/
   clear: both;
 }
+
+
+figure {
+  margin: 0;
+  position: relative;
+}
+/*
+  Moves the caption for the figure image inside the image space at the bottom
+*/
+figcaption {
+  position: absolute;
+  padding: 10px;
+  bottom: 0;
+  background: white;
+  width: 100%;
+  text-align: center;
+}
+figure img {
+  width: 100%;
+}
+
+
+
 /*
   displays and styles 'label' tags (for radio button 'input' tags)
 */
@@ -97,7 +120,6 @@ label {
 .column {
   display: inline-block;
   width: 45%;
-  background: #ccc;
 }
 
 .numlist {
@@ -150,5 +172,9 @@ label {
 @media only screen and (max-width: 900px) {
   label span {
     display: none;
+  }
+  .column {
+    display: inline-block;
+    width: 100%;
   }
 }

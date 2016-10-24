@@ -1,7 +1,8 @@
-# CSS-only tabbed menu with radio buttons
+# Using 3rd-party code
 
-This is the solution to CSS-only tabs, demonstrated in lab 03 and lecture 02 afterwards.
+This version of the radio button tabbed navigation includes a link to the the [W3.CSS framework](http://www.w3schools.com/w3css/).
 
-The code is heavily commented so you can understand how this works and adapt it for your own use later.
+Read up on the classes at the link above, and experiment. For instance:
 
-Preview the [rendered code on GitHub pages](https://ctec3905.github.io/lab03-radiobutton-tabs/). 
+- look at [W3.CSS fluid grids](http://www.w3schools.com/w3css/w3css_grid.asp) and make a 3-column grid for the images.
+- read up on the [W3.CSS colour themes](http://www.w3schools.com/w3css/w3css_color_themes.asp) and try adding the classes to elements in your html to create a harmonious appearance.
