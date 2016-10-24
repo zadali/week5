@@ -1,4 +1,4 @@
-# CSS-only tabbbed menu with radio buttons
+# CSS-only tabbed menu with radio buttons
 
 This is the solution to CSS-only tabs, demonstrated in lab 03 and lecture 02 afterwards.
 
