@@ -2,9 +2,9 @@
 
 A simple CSS-only 3-tab layout is provided, with a tab for HTML5, CSS and JavaScript.
 
-Use this to add 5 things you know about each language to each section, actually using that language in the process!
+Use this to **add 5 things you know about each language** to **each section** actually using each language as follows! At least reach stage 2.
 
-## Stage 1
+## Stage 1: use HTML
 
 Add 5 different pieces of information about each language using the following elements:
 
@@ -12,7 +12,7 @@ Add 5 different pieces of information about each language using the following el
 - Add the CSS items in an **unordered list**
 - Add the Javascript items in a **definition list**
 
-## Stage 2
+## Stage 2: use CSS
 
 Style each of the three language sections differently using CSS:
 
@@ -22,7 +22,7 @@ Style each of the three language sections differently using CSS:
 - Set a `border-top` property above each `li` tag and a final `border-bottom` to the `last-child`
 - Style the definition term (`dt`) and definition description (`dd`) items separately
 
-## Stage 3
+## Stage 3: use JavaScript
 
 Take and store user input from JavaScript, and create new DOM nodes:
 
