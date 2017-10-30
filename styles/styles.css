@@ -1,7 +1,16 @@
 body {
   margin: 0;
 }
-
+h1 {
+  text-align: center;
+  background: #444;
+  color: #eee;
+  margin: 0;
+  padding: 0.5em;
+}
+h2 {
+  margin-top: 0;
+}
 /*
   Hides the radio buttons ('input' tags) themselves, but not
   their labels, which form the tabs.
@@ -11,7 +20,7 @@ body {
 input,
 section {
   display: none;
-  /*padding: 1em;*/
+  padding: 1em;
   clear: both;
 }
 
@@ -20,6 +29,7 @@ section {
 */
 label {
   display: block;
+  box-sizing: border-box;
   float: left;
   width: 33.33%;
   color: #888;
@@ -28,7 +38,12 @@ label {
   text-align: center;
   background: #eee;
   line-height: 3em;
+  border-right: 1px solid #444;
 }
+label:last-child {
+  border-right: none;
+}
+
 /*
   The radio button label tags form the 'tabs' used to show the 
   sections - when clicked, the input tag 'checked' attribute 
@@ -51,11 +66,11 @@ label {
   Styles label elements (tabs) *only* when they're 'checked'
 */
 [id^="tab"]:checked + label {
-  background: #fff;
+  background: #ccc;
   color: #222;
 }
 [id^="tab"]:checked + label .fa {
-  color: #f69;
+  color: #090;
 }
 
 .tab-content {
@@ -101,14 +116,16 @@ label {
 
 
 /* --------- Basic responsive breakpoint --------- */
-/* hides the tab text but leaves the icons visible */
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 1.25em;
+  }
+  /* hides the tab text but leaves the icons visible: */
   label span {
     display: none;
   }
   .column {
     display: inline-block;
-    width: 100%;
   }
 }

@@ -24,9 +24,11 @@ Style each of the three language sections differently using CSS:
 
 ## Stage 3
 
-Take and store user input from JavaScript, and create new DOM nodes
+Take and store user input from JavaScript, and create new DOM nodes:
 
 - Delete the definition list and create a `form` with an `input type="text"` field and an `input type="submit"` button
 - review `getElementById` and `eventListener` from the local storage exercise
 - use Javascript to **capture items** from user input into the form field, and **add a new paragraph** each time.
 - Use `localStorage.setItem("item-name", "value from form field");` to store the data
+
+To start your research, see [JavaScript HTML DOM Elements (Nodes)](https://www.w3schools.com/js/js_htmldom_nodes.asp) (W3Schools) and [Node.appendChild()](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild) (MDN Web Docs).
