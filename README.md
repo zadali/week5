@@ -16,9 +16,9 @@ Add 5 different pieces of information about each language using the following el
 
 Style each of the three language sections differently using CSS:
 
-- Use alternate colours for the table rows (`tr`) and style the `td` tags in the table head (`th`) tag separately. - Use `border-collapse`
-- Style the unordered list `ul` items so that there are no bullet points and no margin or padding
-- give the `li` tags some padding
+- Use alternate colours for the table rows (`tr`) and style the `td` tags in the table head (`th`) tag separately. Use `border-collapse` to close the gaps between the table rows
+- Style the unordered list `ul` so that there are no bullet points and no margin or padding
+- give the `li` tags some padding of your own choice
 - Set a `border-top` property above each `li` tag and a final `border-bottom` to the `last-child`
 - Style the definition term (`dt`) and definition description (`dd`) items separately
 
