@@ -11,6 +11,15 @@ h1 {
 h2 {
   margin-top: 0;
 }
+footer a:link,
+footer a:visited {
+  color: #444;
+}
+footer a:hover {
+  color: #888;
+}
+
+
 /*
   Hides the radio buttons ('input' tags) themselves, but not
   their labels, which form the tabs.
@@ -23,7 +32,18 @@ section {
   padding: 1em;
   clear: both;
 }
-
+section footer {
+  position: absolute;
+  bottom: 0;
+  background: #ccc;
+  width: 100%;
+  margin-left: -1em;
+}
+section footer p {
+  padding: 0 1em;
+  line-height: 1.5em;
+  text-align: center;
+}
 /*
   displays and styles 'label' tags (for radio button 'input' tags)
 */
