@@ -15,28 +15,6 @@ section {
   clear: both;
 }
 
-
-figure {
-  margin: 0;
-  position: relative;
-}
-/*
-  Moves the caption for the figure image inside the image space at the bottom
-*/
-figcaption {
-  position: absolute;
-  padding: 10px;
-  bottom: 0;
-  background: white;
-  width: 100%;
-  text-align: center;
-}
-figure img {
-  width: 100%;
-}
-
-
-
 /*
   displays and styles 'label' tags (for radio button 'input' tags)
 */
@@ -95,80 +73,36 @@ label {
 */
 
 .tab_container section * {
-  animation: fadeInScale 0.7s ease-in-out;
+  animation: fadeIn 0.7s ease-in-out;
 }
 
-@keyframes fadeInScale {
+@keyframes fadeIn {
 
   0% { 
-  	transform: scale(0.85);
   	opacity: 0;
   }
 
   100% { 
-  	transform: scale(1);
   	opacity: 1;
   }
   
 }
 
 
-/* --------- List item styles --------- */
-/*
-  these styles are specific to tab 2
-*/
-.column {
-  display: inline-block;
-  width: 45%;
-}
+/* --------- table styles below here --------- */
 
-.numlist {
-  counter-reset: mylist;
-  /* 'mylist' is a (made-up) name to reset all '.numlist' elements */
-}
-.numlist li {
-  list-style-type: none;
-}
-.numlist li:before {
-  content: counter(mylist) ". ";
-  counter-increment: mylist;
-}
-.numlist2 {
-  counter-reset: mylist 4;
-}
-.numlist3 li:before,
-.numlist4 li:before {
-  counter-increment: mylist 3;
-  /* count list numbers in threes */
-}
-.numlist3 li:before {
-  /* pad numbers (or use display: inline-block;) */
-  float: left;
-  /* makes room to align 1- and 2-digit list item numbers */
-  width: 1.75em;
-}
-.numlist4 li:before {
-  float: left;
-  text-align: right;
-  /* padding combined with width aligns list items */
-  padding-right: 0.5em; 
-  width: 1.25em;
-}
 
-/* --------- The target selector --------- */
-/*
-  styles specific to tab 2
-*/
-[id^="news"]:target {
-  background-color: #e5eecc;
-  transition: all 2s ease;
-}
+/* --------- unordered list styles below here --------- */
+
+
+/* --------- definition list styles below here --------- */
+
+
 
 
 /* --------- Basic responsive breakpoint --------- */
-/*
-  basic breakpoint - hides the tab text but leaves the icons visible
-*/
+/* hides the tab text but leaves the icons visible */
+
 @media only screen and (max-width: 900px) {
   label span {
     display: none;
