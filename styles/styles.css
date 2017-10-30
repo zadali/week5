@@ -2,6 +2,7 @@ body {
   margin: 0;
 }
 h1 {
+  font-size: 1.25em;
   text-align: center;
   background: #444;
   color: #eee;
@@ -59,6 +60,10 @@ label {
   background: #eee;
   line-height: 3em;
   border-right: 1px solid #444;
+}
+/* hides the tab text but leaves the icons visible: */
+label span {
+  display: none;
 }
 label:last-child {
   border-right: none;
@@ -137,15 +142,12 @@ label:last-child {
 
 /* --------- Basic responsive breakpoint --------- */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (min-width: 700px) {
   h1 {
-    font-size: 1.25em;
+    font-size: 2em;
   }
-  /* hides the tab text but leaves the icons visible: */
+  /* shows the tab text and the icons: */
   label span {
-    display: none;
-  }
-  .column {
-    display: inline-block;
+    display: inline;
   }
 }
