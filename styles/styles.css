@@ -130,15 +130,45 @@ label:last-child {
 
 
 /* --------- table styles below here --------- */
+table, th, td {
+     border: solid black;
+	 
+} 
 
+th {
+     color: blue;
+}
+tr {
+     color: red;
+}
+table { border collapse: collapse;}
 
 /* --------- unordered list styles below here --------- */
+
+li { list-style: none;
+	margin: 0;
+	padding: 10px;
+	border-top: 1px solid red;
+	 
+}
+
+ul { padding: 0;
+	margin: 0;
+	border-bottom: 1px solid red;
+}
 
 
 /* --------- definition list styles below here --------- */
 
 
+dd { 
+    
+	color: blue;
+} 
 
+dt { 
+	 color: red;
+}
 
 /* --------- Basic responsive breakpoint --------- */
 
@@ -150,4 +180,13 @@ label:last-child {
   label span {
     display: inline;
   }
+}
+
+
+
+#form {
+	display:block;
+}
+#Sentence {
+	display: block;
 }
